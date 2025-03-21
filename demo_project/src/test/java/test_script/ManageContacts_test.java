@@ -13,7 +13,7 @@ import utilities.Exel_utilities;
 public class ManageContacts_test extends Base 
 {   
 	
-	@Test
+	@Test(groups={"Regression"})
 	public void manageContact() throws Exception
 	{
 //		String username="admin";

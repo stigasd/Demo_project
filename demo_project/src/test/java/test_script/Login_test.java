@@ -1,4 +1,4 @@
-package test_script;
+	package test_script;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import utilities.Exel_utilities;
 
 public class Login_test extends Base  {
 	
-	@Test(priority=1)
+	@Test(priority=1,groups={"Regression"},retryAnalyzer=retry.Retry.class,description="verifying login using usernam and password")
 	public void verifyTheUserIsAbleToLoginUsingValidCredentials() throws IOException
 	{
 //		String username="admin";
